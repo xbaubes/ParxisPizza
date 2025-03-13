@@ -1,0 +1,218 @@
+{
+	"info": {
+		"_postman_id": "bc8290e6-c611-4e9b-8c1d-d06239bff7bf",
+		"name": "ParxisPizza",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38642106"
+	},
+	"item": [
+		{
+			"name": "Pizzes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/pizzes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"pizzes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PizzaByName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/pizzes?nom=Margarita",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"pizzes"
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": "Margarita"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NewPizza",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Nom\": \"Carbonara\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/pizzes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"pizzes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ingredients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/ingredients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"ingredients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IngredientByName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/ingredients?nom=Anxova",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"ingredients"
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": "Anxova"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NewIngredient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Nom\": \"Crema de llet\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/ingredients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"ingredients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Composicio",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/composicions/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"composicions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NewComposicio",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"IdPizza\" : 2,\r\n    \"IdIngredient\": 4,\r\n    \"Quantitat\": 300\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/composicions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"composicions"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
