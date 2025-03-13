@@ -1,6 +1,6 @@
 import express from 'express';
 import pizzaRoutes from './pizzaRoutes.js';
-import ingredientRoutes from './ingredientRoute.js';
+import ingredientRoutes from './ingredientRoutes.js';
 import composicioRoutes from './composicioRoutes.js';
 
 const router = express.Router();
