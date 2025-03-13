@@ -1,27 +1,12 @@
 import express from 'express';
-import sql from 'mssql';
+import pizzaRoutes from './pizzaRoutes.js';
+import ingredientRoutes from './ingredientRoute.js';
+import composicioRoutes from './composicioRoutes.js';
 
 const router = express.Router();
 
-// Obtenir totes les pizzes
-router.get('/pizzes', async (req, res) => {
-    try {
-        const result = await sql.query('SELECT * FROM Pizza');
-        res.json(result.recordset);
-    } catch (error) {
-        res.status(500).json({ error: error.message });
-    }
-});
-
-// Afegir una nova pizza
-router.post('/pizzes', async (req, res) => {
-    const { Nom } = req.body;
-    try {
-        await sql.query`INSERT INTO Pizza (Nom) VALUES (${Nom})`;
-        res.status(201).json({ message: "Pizza creada correctament" });
-    } catch (error) {
-        res.status(500).json({ error: error.message });
-    }
-});
+router.use('/pizzes', pizzaRoutes);
+router.use('/ingredients', ingredientRoutes);
+router.use('/composicions', composicioRoutes);
 
 export default router;
