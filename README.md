@@ -10,7 +10,7 @@ L'API de ParxisPizza és una RESTful API que gestiona la base de dades d'una piz
 
 🛠️ **Tecnologies:** Node.js, Express, SQL Server.
 
-🔗 **Prova l'API:** [Col·lecció de Postman](https://github.com/xbaubes/ParxisPizza/blob/main/ParxisPizza.postman_collection.json)
+🔗 **Prova l'API:** [Col·lecció de Postman](https://github.com/xbaubes/ParxisPizza/blob/main/ParxisPizza.postman_collection.json).
 
 ## 💾 Database Schema
 
@@ -71,9 +71,14 @@ DB_NAME=Pizzeria         # Nom de la base de dades
 PORT=3000                # Port en el qual s'executa el servidor
 SERVER=localhost         # Nom del servidor
 ```
-Hauràs de crear el fitxer **`.env`** i afegir-lo al projecte. Veure [Database Schema](#-database-schema)
+Hauràs de crear el fitxer **`.env`** i afegir-lo al projecte. Veure [Database Schema](#-database-schema).
 
 ## 🚀 Com executar el projecte
+
+### 📌 **DB**
+Inicialitzar base de dades amb els [scripts](https://github.com/xbaubes/ParxisPizza/tree/main/db) inclosos al projecte.
+### 📌 **API**
 ```sh
 npm install
 npm start
+```
