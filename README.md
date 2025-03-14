@@ -71,7 +71,7 @@ DB_NAME=Pizzeria         # Nom de la base de dades
 PORT=3000                # Port en el qual s'executa el servidor
 SERVER=localhost         # Nom del servidor
 ```
-Hauràs de crear el fitxer **`.env`** i afegir-lo al projecte. Veure [Database Schema](#-estructura-del-projecte).
+Hauràs de crear el fitxer **`.env`** i afegir-lo al projecte. Veure [Estructura del projecte](#-estructura-del-projecte).
 
 ## 🚀 Com executar el projecte
 
