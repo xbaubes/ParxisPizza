@@ -1,22 +1,22 @@
 import { getAllPizzas, addPizza } from '../models/pizzaModel.js';
 
-const getPizzas = async (req, res) => {
+const getPizzas = async (req, res, next) => {
     const { nom } = req.query;
     try {
         const pizzas = await getAllPizzas(nom);
         res.json(pizzas);
     } catch (error) {
-        res.status(500).json({ error: error.message });
+        next(error);
     }
 };
 
-const createPizza = async (req, res) => {
+const createPizza = async (req, res, next) => {
     const { Nom } = req.body;
     try {
         await addPizza(Nom);
         res.status(201).json({ message: "Pizza creada correctament" });
     } catch (error) {
-        res.status(500).json({ error: error.message });
+        next(error);
     }
 };
 
