@@ -12,9 +12,20 @@ L'API de ParxisPizza és una RESTful API que gestiona la base de dades d'una piz
 
 🔗 **Prova l'API:** [Col·lecció de Postman](https://github.com/xbaubes/ParxisPizza/blob/main/ParxisPizza.postman_collection.json).
 
-## 💾 Database Schema
 
-Diagrama de la base de dades:
+## 🌐 Endpoints API
+
+| **Mètode** | **Ruta**                | **Descripció**                   |
+|------------|-------------------------|----------------------------------|
+| 🟢GET     | `/pizzes`               | Obtenir pizzes                   |
+| 🔴POST    | `/pizzes`               | Crear una nova pizza             |
+| 🟢GET     | `/ingredients`          | Obtenir ingredients              |
+| 🔴POST    | `/ingredients`          | Afegir un nou ingredient         |
+| 🟢GET     | `/composicions/:IdPizza`| Obtenir ingredients d'una pizza  |
+| 🔴POST    | `/composicions`         | Assignar ingredient a una pizza  |
+
+
+## 💾 Database Schema
 
 ![Diagrama de la Pizzeria](https://github.com/xbaubes/BasesDeDades/wiki/SentenciesSQL/pizzeria.png)
 
@@ -53,6 +64,7 @@ Aquest esquema representa pizzes, ingredients i la seva relació dins del nostre
     - `connect.js`
     - `user.sql`
 
+
 ## 🔐 Configuració d'Entorn `.env`
 
 Aquest fitxer **`.env`** conté les variables d'entorn necessàries per configurar la base de dades i el servidor de l'aplicació.
@@ -72,6 +84,7 @@ PORT=3000                # Port en el qual s'executa el servidor
 SERVER=localhost         # Nom del servidor
 ```
 Hauràs de crear el fitxer **`.env`** i afegir-lo al projecte. Veure [Estructura del projecte](#-estructura-del-projecte).
+
 
 ## 🚀 Execució del Projecte
 
