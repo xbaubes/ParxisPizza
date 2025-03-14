@@ -46,7 +46,7 @@ Aquest esquema representa pizzes, ingredients i la seva relació dins del nostre
       - `pizzaController.js`
       - `ingredientController.js`
       - `composicioController.js`
-  - **`db/`** → *Scripts SQL i configuració de la base de dades*
+  - **`db/`**
     - `inserts.sql`
     - `database-tables.sql`
     - `config.js`
@@ -76,7 +76,7 @@ Hauràs de crear el fitxer **`.env`** i afegir-lo al projecte. Veure [Estructura
 ## 🚀 Execució del Projecte
 
 ### 📌 **DB**
-Inicialitzar base de dades amb els [scripts](https://github.com/xbaubes/ParxisPizza/tree/main/db) inclosos al projecte.
+Inicialitzar base de dades amb els [scripts SQL](https://github.com/xbaubes/ParxisPizza/tree/main/db) inclosos al projecte.
 ### 📌 **API**
 ```sh
 npm install
