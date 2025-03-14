@@ -73,7 +73,7 @@ SERVER=localhost         # Nom del servidor
 ```
 Hauràs de crear el fitxer **`.env`** i afegir-lo al projecte. Veure [Estructura del projecte](#-estructura-del-projecte).
 
-## 🚀 Executar el projecte
+## 🚀 Execució del Projecte
 
 ### 📌 **DB**
 Inicialitzar base de dades amb els [scripts](https://github.com/xbaubes/ParxisPizza/tree/main/db) inclosos al projecte.
