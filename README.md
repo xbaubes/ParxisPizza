@@ -96,10 +96,26 @@ npm install
 npm start
 ```
 
-## 🔍 Millores necessàries
+## 🔧 Millores a Implementar
 
-- Afegir logs
-- Depurar i validar les dades rebudes
-- Autenticació per accedir a les dades
-- Diferents formes d'ordenació de les dades
-- Completar les operacions CRUD
+### 📌 **Seguretat**
+- **Evitar la vulnerabilitat a injecció SQL**: Utilitzar `parameterized queries` amb `mssql` o un ORM com `Sequelize` per evitar atacs per injecció SQL.
+- **Autenticació per accedir a les dades**: Implementar autenticació amb `JWT` o sessions segures per restringir l'accés a usuaris autenticats.
+- **Xifratge de dades sensibles a la base de dades**: Usar `bcrypt` per xifrar contrasenyes i `crypto` o `argon2` per altres dades sensibles.
+
+### 📌 **Base de Dades**
+- **Connexió i reconnexió a la base de dades**: Configurar un `connection pool` per millorar l'eficiència de les consultes i evitar problemes de connexió.
+- **Quan treballes amb taules grans, evita retornar totes les files alhora**: Implementar paginació per limitar la quantitat de dades retornades per consulta (`LIMIT OFFSET` en SQL).
+- **Diferents formes d'ordenació de les dades**: Permetre ordenar els resultats per diferents criteris (`ASC/DESC`) mitjançant query params a l'API.
+
+### 📌 **Millores en l'API**
+- **Completar les operacions CRUD**: Assegurar que totes les rutes tenen les operacions `Create`, `Read`, `Update` i `Delete` implementades correctament.
+- **Depurar i validar les dades rebudes**: Implementar validació amb `express-validator` o `Joi` per evitar errors de format i dades incorrectes.
+
+### 📌 **Logs i Testing**
+- **Afegir logs**: Integrar `winston` o `morgan` per registrar peticions i errors, millorant la monitorització de l'API.
+- **Afegir testos**: Desenvolupar proves unitàries i d'integració amb `Jest` o `Mocha + Chai` per garantir la qualitat del codi.
+
+### 📌 **Optimització**
+- **Limitar les connexions simultànies**: Configurar un `rate limiter` (`express-rate-limit`) per evitar atacs per denegació de servei (`DoS`).
+
