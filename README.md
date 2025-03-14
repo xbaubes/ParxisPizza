@@ -95,3 +95,11 @@ Inicialitzar base de dades amb els [scripts SQL](https://github.com/xbaubes/Parx
 npm install
 npm start
 ```
+
+## 🔍 Millores necessàries
+
+- Afegir logs
+- Depurar i validar les dades rebudes
+- Autenticació per accedir a les dades
+- Diferents formes d'ordenació de les dades
+- Completar les operacions CRUD
