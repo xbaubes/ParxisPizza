@@ -31,6 +31,8 @@ L'API de ParxisPizza és una RESTful API que gestiona la base de dades d'una piz
 
 Aquest esquema representa pizzes, ingredients i la seva relació dins del nostre sistema.
 
+[Disseny implementat](https://github.com/xbaubes/BasesDeDades/wiki/Disseny-de-Bases-de-Dades).
+
 ## 📂 Estructura del Projecte
 
 - **`ParxisPizza/`**
