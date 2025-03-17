@@ -30,3 +30,4 @@ CREATE TABLE Composicio (
     CONSTRAINT FK_Composicio_Ingredient FOREIGN KEY (ID_ingredient) REFERENCES Ingredient(ID_ingredient)
 );
 GO
+

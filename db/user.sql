@@ -19,3 +19,4 @@ GO
 -- Concedir permisos necessaris
 ALTER ROLE db_owner ADD MEMBER adminParxisPizza;
 GO
+

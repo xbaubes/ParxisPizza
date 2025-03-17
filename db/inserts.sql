@@ -18,3 +18,4 @@ VALUES (1, 1, 150);
 INSERT INTO Composicio (ID_pizza, ID_ingredient, Quantitat)
 VALUES (1, 3, 200);
 GO
+
