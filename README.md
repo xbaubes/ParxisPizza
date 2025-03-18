@@ -78,7 +78,7 @@ Les següents variables defineixen la connexió a la base de dades i la configur
 # Configuració de la Base de Dades
 DB_HOST=localhost        # Host de la base de dades
 DB_USER=adminParxisPizza # Usuari de la base de dades
-DB_PASS=CL1zmQy!asp.-M!  # Contrasenya de la base de dades
+DB_PASS=CL1zmQy.asp.-Mr  # Contrasenya de la base de dades
 DB_NAME=Pizzeria         # Nom de la base de dades
 
 # Configuració del Servidor
