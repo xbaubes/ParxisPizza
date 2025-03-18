@@ -3,7 +3,7 @@ GO
 
 -- Crear un Login (usuari del servidor)
 CREATE LOGIN adminParxisPizza 
-WITH PASSWORD = 'CL1zmQy!asp.-M!',
+WITH PASSWORD = 'CL1zmQy.asp.-Mr',
      DEFAULT_DATABASE = Pizzeria,
      CHECK_EXPIRATION = OFF,
      CHECK_POLICY = OFF;
