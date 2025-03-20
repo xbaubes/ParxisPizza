@@ -115,7 +115,7 @@ npm start
 - **Depurar i validar les dades rebudes**: Implementar validació amb `express-validator` o `Joi` per evitar errors de format i dades incorrectes.
 
 ### 📌 **Gestió d'errors**
-- **Gestió dinàmica de l'estatus de l'error**: Personalitzar la informació de l'objecte error al ser generat, tant l'estatus amb `error.status` com el missatge amb `error.message`. Al ser tractat s'ha de mostrar aquesta informació i no una de genèrica.
+- **Gestió dinàmica de l'estatus de l'error**: Personalitzar la informació de l'objecte error al ser generat, tant l'estatus amb `error.status` com el missatge amb `error.message`. Al ser tractat al middleware que centralitza la gestió d'errors s'ha de mostrar aquesta informació i no una de genèrica.
 
 ### 📌 **Logs i Testing**
 - **Afegir logs**: Integrar `winston` o `morgan` per registrar peticions i errors, millorant la monitorització de l'API.
