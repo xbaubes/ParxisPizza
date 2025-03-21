@@ -117,13 +117,15 @@ Aquesta comanda executa tots els tests definits amb Vitest i Supertest, permeten
 ### 📌 **Seguretat**
 - **Autenticació per accedir a les dades**: Implementar autenticació amb `JWT` o sessions segures per restringir l'accés a usuaris autenticats.
 - **Xifratge de dades sensibles a la base de dades**: Usar `bcrypt` per xifrar contrasenyes i `crypto` o `argon2` per altres dades sensibles.
+- **Limitar les connexions simultànies**: Configurar un `rate limiter` (`express-rate-limit`) per evitar atacs per denegació de servei (`DoS`).
+- **Limitar l'accés**: Modificar la configuració de `CORS` per tal de permetre la connexió a l'API únicament des de dominis autoritzats.
 
 ### 📌 **Base de Dades**
 - **Reconnexió a la base de dades**: Implementar un mecanisme automàtic per restablir la connexió del `connection pool` en cas de fallada o desconnexió inesperada, garantint així l'estabilitat del servei.
 - **Quan treballes amb taules grans, evita retornar totes les files alhora**: Implementar paginació per limitar la quantitat de dades retornades per consulta (`LIMIT OFFSET` en SQL).
 - **Diferents formes d'ordenació de les dades**: Permetre ordenar els resultats per diferents criteris (`ASC/DESC`) mitjançant query params a l'API.
 
-### 📌 **Millores en l'API**
+### 📌 **Dades**
 - **Completar les operacions CRUD**: Assegurar que totes les rutes tenen les operacions `Create`, `Read`, `Update` i `Delete` implementades correctament.
 - **Depurar i validar les dades rebudes**: Implementar validació amb `express-validator` o `Joi` per evitar errors de format i dades incorrectes.
 
@@ -133,7 +135,3 @@ Aquesta comanda executa tots els tests definits amb Vitest i Supertest, permeten
 ### 📌 **Logs i Testing**
 - **Afegir logs**: Integrar `winston` o `morgan` per registrar peticions i errors, millorant la monitorització de l'API.
 - **Ampliar testos**: Desenvolupar proves unitàries i d'integració amb `vitest` per garantir el funcionament de cada endpoint. Crear una segona base de dades per testejar les insercions.
-
-### 📌 **Optimització**
-- **Limitar les connexions simultànies**: Configurar un `rate limiter` (`express-rate-limit`) per evitar atacs per denegació de servei (`DoS`).
-
