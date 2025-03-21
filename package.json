@@ -4,7 +4,8 @@
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "start": "node api/server.js"
+    "start": "node api/server.js",
+    "test": "vitest"
   },
   "author": "Xavier Baubés Parramon",
   "license": "ISC",
@@ -14,5 +15,9 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "mssql": "^11.0.1"
+  },
+  "devDependencies": {
+    "supertest": "^7.1.0",
+    "vitest": "^3.0.9"
   }
 }
