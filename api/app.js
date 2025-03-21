@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-connectDB();
+await connectDB();
 
 app.use('/api/v1', routes);
 app.use(notFoundHandler);

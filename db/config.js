@@ -1,3 +1,6 @@
+import dotenv from 'dotenv';
+dotenv.config();
+
 // Configuració de la connexió a SQL Server
 export const dbConfig = {
     user: process.env.DB_USER,

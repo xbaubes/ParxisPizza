@@ -1,18 +1,26 @@
-import sql from 'mssql';
+import { getPool } from '../../db/connect.js';
 
 // Obtenir tots els ingredients (amb filtre opcional per nom)
 export const getAllIngredients = async (Nom) => {
-    let query = 'SELECT * FROM Ingredient';
-    if (Nom) {
-        query += ` WHERE Nom LIKE '%${Nom}%'`;
-    }
-    query += ' ORDER BY Nom';
+  const pool = getPool();
+  let query = 'SELECT * FROM Ingredient';
+  const request = pool.request();
 
-    const result = await sql.query(query);
-    return result.recordset;
+  if (Nom) {
+    query += ' WHERE Nom LIKE @Nom';
+    request.input('Nom', `%${Nom}%`);
+  }
+
+  query += ' ORDER BY Nom';
+  const result = await request.query(query);
+  return result.recordset;
 };
 
 // Afegir un nou ingredient
 export const addIngredient = async (Nom) => {
-    await sql.query`INSERT INTO Ingredient (Nom) VALUES (${Nom})`;
+  const pool = getPool();
+  await pool
+    .request()
+    .input('Nom', Nom)
+    .query('INSERT INTO Ingredient (Nom) VALUES (@Nom)');
 };
