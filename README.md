@@ -123,7 +123,7 @@ Aquesta comanda executa tots els tests definits amb Vitest i Supertest, permeten
 ### 📌 **Base de Dades**
 - **Reconnexió a la base de dades**: Implementar un mecanisme automàtic per restablir la connexió del `connection pool` en cas de fallada o desconnexió inesperada, garantint així l'estabilitat del servei.
 - **Quan treballes amb taules grans, evita retornar totes les files alhora**: Implementar paginació per limitar la quantitat de dades retornades per consulta (`LIMIT OFFSET` en SQL).
-- **Diferents formes d'ordenació de les dades**: Permetre ordenar els resultats per diferents criteris (`ASC/DESC`) mitjançant query params a l'API.
+- **Diferents formes d'ordenació de les dades**: Permetre ordenar els resultats per diferents criteris (`ASC/DESC`) mitjançant `query params` a l'API.
 
 ### 📌 **Dades**
 - **Completar les operacions CRUD**: Assegurar que totes les rutes tenen les operacions `Create`, `Read`, `Update` i `Delete` implementades correctament.
