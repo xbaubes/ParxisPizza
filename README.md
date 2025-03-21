@@ -134,4 +134,4 @@ Aquesta comanda executa tots els tests definits amb Vitest i Supertest, permeten
 
 ### 📌 **Logs i Testing**
 - **Afegir logs**: Integrar `winston` o `morgan` per registrar peticions i errors, millorant la monitorització de l'API.
-- **Ampliar testos**: Desenvolupar proves unitàries i d'integració amb `vitest` per garantir el funcionament de cada endpoint. Crear una segona base de dades per testejar les insercions.
+- **Ampliar testos**: Desenvolupar proves unitàries i d'integració amb `vitest` per garantir el funcionament de cada endpoint. Crear una segona base de dades per testejar les insercions, crear un segon fitxer `.env` per gestionar l'entorn de desenvolupament.
