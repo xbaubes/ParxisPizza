@@ -122,7 +122,7 @@ Aquesta comanda executa tots els tests definits amb Vitest i Supertest, permeten
 
 ### 📌 **Base de Dades**
 - **Reconnexió a la base de dades**: Implementar un mecanisme automàtic per restablir la connexió del `connection pool` en cas de fallada o desconnexió inesperada, garantint així l'estabilitat del servei.
-- **Quan treballes amb taules grans, evita retornar totes les files alhora**: Implementar paginació per limitar la quantitat de dades retornades per consulta (`LIMIT OFFSET` en SQL).
+- **Evita retornar totes les files alhora quan treballes amb taules grans**: Implementar paginació per limitar la quantitat de dades retornades per consulta (`LIMIT OFFSET` en SQL).
 - **Diferents formes d'ordenació de les dades**: Permetre ordenar els resultats per diferents criteris (`ASC/DESC`) mitjançant `query params` a l'API.
 
 ### 📌 **Dades**
@@ -135,3 +135,6 @@ Aquesta comanda executa tots els tests definits amb Vitest i Supertest, permeten
 ### 📌 **Logs i Testing**
 - **Afegir logs**: Integrar `winston` o `morgan` per registrar peticions i errors, millorant la monitorització de l'API.
 - **Ampliar testos**: Desenvolupar proves unitàries i d'integració amb `vitest` per garantir el funcionament de cada endpoint. Crear una segona base de dades per testejar les insercions, crear un segon fitxer `.env` per gestionar l'entorn de desenvolupament.
+
+### 📌 **Documentació**
+- **Documentació clara i completa dels endpoints**: Generar automàticament documentació interactiva via web per facilitar la col·laboració entre backend i frontend. L'estàndard més habitual és OpenAPI amb `swagger-ui-express`.
