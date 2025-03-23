@@ -65,7 +65,8 @@ Aquest esquema representa pizzes, ingredients i la seva relació dins del nostre
     - `config.js`
     - `connect.js`
     - `user.sql`
-
+  - **`tests/`**
+    - `api.test.js`
 
 ## 🔐 Configuració d'Entorn `.env`
 
