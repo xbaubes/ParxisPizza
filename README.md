@@ -1,12 +1,12 @@
 # 🎲 Parxís Pizza 🍕
 
-L'API de ParxisPizza és una RESTful API que gestiona la base de dades d'una pizzeria, permetent operacions com:
+L'API de ParxisPizza és una RESTful API que gestiona la base de dades d'una pizzeria, operacions que permet:
 
 🔹 **Gestió de pizzes** → Crear i obtenir pizzes.
 
 🔹 **Gestió d'ingredients** → Crear i obtenir ingredients.
 
-🔹 **Composició de pizzes** → Assignar ingredients a cada pizza.
+🔹 **Composició de pizzes** → Assignar i obtenir ingredients de cada pizza.
 
 🛠️ **Tecnologies:** Node.js, Express, SQL Server.
 
