@@ -135,7 +135,8 @@ Aquesta comanda executa tots els tests definits amb Vitest i Supertest, permeten
 
 ### 📌 **Logs i Testing**
 - **Afegir logs**: Integrar `winston` o `morgan` per registrar peticions i errors, millorant la monitorització de l'API.
-- **Ampliar testos**: Desenvolupar proves unitàries i d'integració amb `vitest` per garantir el funcionament de cada endpoint. Crear una segona base de dades per testejar les insercions, crear un segon fitxer `.env` per gestionar l'entorn de desenvolupament.
+- **Ampliar testos**: Desenvolupar proves unitàries i d'integració amb `vitest` per garantir el funcionament de cada endpoint.
+- **Base de dades de testing**: Crear una segona base de dades per testejar les insercions, crear un segon fitxer `.env` per gestionar l'entorn de desenvolupament.
 
 ### 📌 **Documentació**
 - **Documentació clara i completa dels endpoints**: Generar automàticament documentació interactiva via web per facilitar la col·laboració entre backend i frontend. L'estàndard més habitual és OpenAPI amb `swagger-ui-express`.
