@@ -9,7 +9,7 @@
   },
   "author": "Xavier Baubés Parramon",
   "license": "ISC",
-  "description": "",
+  "description": "RESTful API per a la gestió de la base de dades d'una pizzeria",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
