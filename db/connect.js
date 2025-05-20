@@ -1,7 +1,7 @@
 import sql from 'mssql';
 import { dbConfig } from './config.js';
 
-let pool; // Connexió compartida
+let pool; // Connexió compartida (Singleton)
 
 export const connectDB = async () => {
   if (!pool) {
@@ -15,7 +15,7 @@ export const connectDB = async () => {
   return pool;
 };
 
-export const getPool = () => pool;
+export const getPool = () => pool; // Què passa si la connexió a la base de dades no s'ha establert o es perd ???
 
 export const closeDB = async () => {
   if (pool) {
