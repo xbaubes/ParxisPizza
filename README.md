@@ -125,7 +125,7 @@ Aquesta comanda executa tots els tests definits amb Vitest i Supertest, permeten
 - **Millorar la gestió de la connexió**: Implementar un mecanisme automàtic per restablir la connexió del `connection pool` en cas de fallada o desconnexió inesperada, garantint així l'estabilitat del servei. Afegir l'accés al `connection pool` a un mòdul o middleware per evitar cridar-lo a cada funció que requereixi accedir a la base de dades.
 - **Evita retornar totes les files alhora quan treballes amb taules grans**: Implementar paginació per limitar la quantitat de dades retornades per consulta (`LIMIT OFFSET` en SQL).
 - **Diferents formes d'ordenació de les dades**: Permetre ordenar els resultats per diferents criteris (`ASC/DESC`) mitjançant `query params` a l'API.
-- **Abstracció de l'accés a dades**: Usar `ORM` per simplificar l'accés a la base de dades, escriure consultes en JavaScript en lloc d'SQL i facilitar el canvi entre diferents tecnologies de bases de dades.
+- **Abstracció de l'accés a dades**: Fer servir un `ORM` com `Sequelize` per simplificar l'accés a la base de dades, escriure consultes en JavaScript en lloc d'SQL i facilitar el canvi entre diferents tecnologies de bases de dades.
 
 ### 📌 **Dades**
 - **Completar les operacions CRUD**: Assegurar que totes les rutes tenen les operacions `Create`, `Read`, `Update` i `Delete` implementades correctament.
