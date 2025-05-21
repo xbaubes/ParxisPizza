@@ -122,7 +122,7 @@ Aquesta comanda executa tots els tests definits amb Vitest i Supertest, permeten
 - **Limitar l'accés**: Modificar la configuració de `CORS` per tal de permetre la connexió a l'API únicament des de dominis autoritzats.
 
 ### 📌 **Base de Dades**
-- **Identificadors universals**: Usar `UUID`, en lloc d'identificadors autoincrementals, per millora la seguretat i escalabilitat, ja que evita col·lisions en entorns distribuïts i fa més difícil endevinar identificadors sensibles.
+- **Identificadors universals**: Usar `UUID`, en lloc d'identificadors autoincrementals, per millora la seguretat i escalabilitat, ja que evita col·lisions en entorns distribuïts i fa més difícil endevinar els identificadors.
 - **Reconnexió a la base de dades**: Implementar un mecanisme automàtic per restablir la connexió del `connection pool` en cas de fallada o desconnexió inesperada, garantint així l'estabilitat del servei.
 - **Evita retornar totes les files alhora quan treballes amb taules grans**: Implementar paginació per limitar la quantitat de dades retornades per consulta (`LIMIT OFFSET` en SQL).
 - **Diferents formes d'ordenació de les dades**: Permetre ordenar els resultats per diferents criteris (`ASC/DESC`) mitjançant `query params` a l'API.
